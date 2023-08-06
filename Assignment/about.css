@@ -1,0 +1,36 @@
+*{
+    background: linear-gradient(-85deg, #ffddfc,  white);
+    background-size: cover;
+}
+.container{
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('assets/images/5.jpg');
+    background-size: 100% 100%;
+    border-color: black;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 9s infinite linear;
+}
+h3{
+    margin-top:450px;
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 80px;
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: rgb(248, 135, 220);
+}
+h3 span {
+    color: black ;
+}
+p em{
+    font-size:25px;
+    color:black;
+}
+ b {
+    float: right;
+}

@@ -1,0 +1,197 @@
+.shope{
+    background: linear-gradient(to right,#fff,rgb(255, 110, 192));
+    background-repeat: no-repeat;
+}
+.shope h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.shope-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.shope-container .shope-box {
+    position: relative;
+    border-radius: 2rem;
+    border: 2px solid;
+    box-shadow: 0 0 1rem #1f242d;
+    overflow:hidden;
+    display: flex;
+}
+.shope-box img {
+    height: 300px;
+    width: 100%
+}
+.shope-box:hover img {
+    transform: scale(1.1);
+}
+.shope-box .shope-layer {
+    position: absolute;
+    bottom: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0 , 0 ,0 , .1), rgb(255, 110, 192));
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.shope-box:hover .shope-layer {
+     transform: translateY(0);
+}
+.shope-layer h4{
+    font-size: 1.5rem;
+}
+.shope-layer p {
+    font-size: 1.6rem;
+    margin: 0;
+}
+.shope-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.shope-layer a i {
+    font-size: 1.5rem;
+    color: #323946;
+}
+p{
+    color: black;
+}
+b {
+    float: right;
+}
+
+
+
+.payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .payTitle {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .payInput::placeholder {
+    color: rgb(163, 163, 163);
+  }
+  
+  .cardIcons {
+    display: flex;
+  }
+  
+  .cardIcon {
+    margin-right: 10px;
+  }
+  
+  .cardInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sm {
+    width: 30%;
+  }
+  
+  .payButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 460px;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+  }
+  
+  @media screen and (max-width:480px) {
+  .payment{
+    width: 90%;
+    padding: 20px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

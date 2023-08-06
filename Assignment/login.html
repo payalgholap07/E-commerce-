@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <section class="contact">
+    <div class="contactForm">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h3>Login</h3>
+            <div class="inputBox">
+                <!-- <input type="text" name="" id="email" class="email" required="required"> -->
+                <input type="text" name="" id="email" class="email" >
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <!-- <input type="text" name="" id="password" class="password" required="required"> -->
+                <input type="text" name="" id="password" class="password" >
+                <span>Password</span>
+            </div>
+            <div class="inputBoxx">
+                <input type="checkbox" >Remember Me 
+            </div>
+
+            <div class="inputBox">
+                <input type="submit" value="Login">
+                <input type="submit" value="Forget Password">
+            </div>
+        </form> 
+    </div>
+</section>
+<p><strong>To Go Back</strong>&nbsp;<a href="home.html">Home Page</a>
+    <b> For Signup &nbsp;<a href="signup.html">Sign Up</a></b> </p>
+    <script >
+        function validateForm() {
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var email = document.getElementById("email").value;
+            if(email == ""){
+                alert('Please Enter Email');
+                return false;
+                }
+                else if(!emailPattern.test(email)){
+                    alert('Please Enter valid Email');
+                return false;
+                    };
+                var password=document.getElementById("password").value;
+                    if (password==null || password=="") {
+                        alert ("please enter the password");
+                        return false;
+                    }
+                }
+
+    </script>
+</body>
+</html>
